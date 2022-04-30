@@ -7,7 +7,7 @@ import {
   getQuote,
   getDog,
   getCat,
-} from '../controllers/api.controller.js';
+} from '../controllers/api.proxy.controller.js';
 
 const router = express.Router();
 
@@ -19,4 +19,4 @@ router.get('/quote', getQuote);
 router.get('/dog', getDog);
 router.get('/cat', getCat);
 
-export { router as api };
+export { router as proxyRouter };
